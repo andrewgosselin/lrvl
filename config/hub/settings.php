@@ -1,7 +1,9 @@
 <?php
 return [
     "public_apps" => [
-        "mail"
+        "dashboard",
+        "projects",
+        "mail",
     ],
     "private_apps" => [
 
