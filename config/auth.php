@@ -14,7 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        // 'guard' => 'web',
+        'guard' => 'sso',
         'passwords' => 'users',
     ],
 
@@ -40,11 +41,14 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
+        ],
+        'sso' => [
+            'driver' => 'sso',
+            'provider' => 'sso'
         ],
     ],
 
@@ -70,7 +74,9 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-
+        'sso' => [
+            'driver' => 'sso',
+        ]
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

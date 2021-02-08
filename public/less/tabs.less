@@ -1,0 +1,78 @@
+@height:26px;
+@padding:10px;
+
+@tabcontainer-color:#66c;
+
+@tab-color:#555;
+@body-color:#ccc;
+
+@text-color:#000;
+
+body{
+  font:14px Arial, sans-serif;
+  background:@body-color;
+}
+
+
+.tabs{
+  background:@tabcontainer-color;
+  height:@height;
+  color:@text-color;
+  a{
+    color:darken(#fff - @text-color, 25%);
+    li:target{
+      color:@text-color; 
+    }
+  }
+  li{
+    float:left;
+    height:@height;
+    background:linear-gradient(darken(@tab-color,15%),@tab-color) @tab-color;
+    box-shadow:inset 0 1px lighten(@tab-color,20%);
+    margin-left:5px;
+    padding:0 @padding;
+    border-radius:5px 5px 0 0;
+    line-height:@height; 
+    text-shadow:0 2px 1px rgba(0,0,0,0.2);
+    position:relative;
+    &:after{
+      display:block;
+      content:'';
+      width:10px;
+      height:10px;
+      background:transparent;
+      border-left:3px solid @tab-color;
+      transform: rotate(-45deg);
+      border-radius:9px;
+      position:absolute;
+      bottom:0;
+      right:-10px;      
+    }
+    &:before{
+      display:block;
+      content:'';
+      width:10px;
+      height:10px;
+      background:transparent;
+      border-bottom:4px solid @tab-color;
+      transform: rotate(-45deg);
+      border-radius:9px;
+      position:absolute;
+      bottom:-5px;
+      left:-10px;
+    }
+    &:target{
+      z-index:4000;
+      background:linear-gradient(lighten(@body-color, 15%), @body-color) @body-color; 
+      &:before, &:after{
+        border-color:@body-color;
+      }
+    }
+  }
+}
+.body{
+  width:100%;
+  position:absolute;
+  top:@height;
+  background:@body-color;
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfcf4f0a4405468f0080affadbb468ec",
+    "content-hash": "325e10693cc453e18ff50663ac4a1182",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -117,6 +117,59 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "cyrex/sso",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrewgosselin/sso-package.git",
+                "reference": "b148bba0a8ee7dbb7fb53e4febd6102fca7cb21f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrewgosselin/sso-package/zipball/b148bba0a8ee7dbb7fb53e4febd6102fca7cb21f",
+                "reference": "b148bba0a8ee7dbb7fb53e4febd6102fca7cb21f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cyrex\\SSO\\SSOProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cyrex\\SSO\\": "src/"
+                },
+                "files": [
+                    "src/app/Http/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Gosselin",
+                    "email": "maninasuitofficial@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package connects products to the Single Sign On System.",
+            "homepage": "https://github.com/newtechautomotiveservices/SSO-Bridge-Package",
+            "support": {
+                "issues": "https://github.com/andrewgosselin/sso-package/issues",
+                "source": "https://github.com/andrewgosselin/sso-package/tree/master"
+            },
+            "time": "2020-12-22T18:35:45+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -894,16 +947,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.19.0",
+            "version": "v8.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb"
+                "reference": "130168c9dcd399f6b42bccfe4882b88c81a4edfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb",
-                "reference": "f5f331cee60f1bbe672503b7eb9ba5b22b2ceacb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/130168c9dcd399f6b42bccfe4882b88c81a4edfe",
+                "reference": "130168c9dcd399f6b42bccfe4882b88c81a4edfe",
                 "shasum": ""
             },
             "require": {
@@ -1057,7 +1110,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-15T16:16:31+00:00"
+            "time": "2020-12-22T17:01:04+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1384,12 +1437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andrewgosselin/lrvl-app-mail.git",
-                "reference": "8b9c45d4b13442a67c1df67ded38442621170bf9"
+                "reference": "12b01f648b175769b160749e89f472a2ee43a3b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrewgosselin/lrvl-app-mail/zipball/8b9c45d4b13442a67c1df67ded38442621170bf9",
-                "reference": "8b9c45d4b13442a67c1df67ded38442621170bf9",
+                "url": "https://api.github.com/repos/andrewgosselin/lrvl-app-mail/zipball/12b01f648b175769b160749e89f472a2ee43a3b3",
+                "reference": "12b01f648b175769b160749e89f472a2ee43a3b3",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1404,7 +1457,10 @@
             "autoload": {
                 "psr-4": {
                     "Lrvl\\MailApp\\": "src/"
-                }
+                },
+                "files": [
+                    "src/app/Http/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1423,7 +1479,7 @@
                 "issues": "https://github.com/andrewgosselin/lrvl-app-mail/issues",
                 "source": "https://github.com/andrewgosselin/lrvl-app-mail/tree/master"
             },
-            "time": "2020-12-22T01:00:52+00:00"
+            "time": "2020-12-22T18:01:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4850,6 +4906,138 @@
             "time": "2020-11-12T00:07:28+00:00"
         },
         {
+            "name": "webklex/laravel-imap",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Webklex/laravel-imap.git",
+                "reference": "c9a872c9767f0050d3e00bb8ca252c006c16600f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Webklex/laravel-imap/zipball/c9a872c9767f0050d3e00bb8ca252c006c16600f",
+                "reference": "c9a872c9767f0050d3e00bb8ca252c006c16600f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
+                "ext-mbstring": "*",
+                "laravel/framework": ">=5.0.0",
+                "php": ">=5.5.9",
+                "webklex/php-imap": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Webklex\\IMAP\\Providers\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Client": "Webklex\\IMAP\\Facades\\Client"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webklex\\IMAP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Malte Goldenbaum",
+                    "email": "github@webklex.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel IMAP client",
+            "homepage": "https://github.com/webklex/laravel-imap",
+            "keywords": [
+                "idle",
+                "imap",
+                "laravel",
+                "laravel-imap",
+                "mail",
+                "oauth",
+                "pop3",
+                "webklex"
+            ],
+            "support": {
+                "issues": "https://github.com/Webklex/laravel-imap/issues",
+                "source": "https://github.com/Webklex/laravel-imap/tree/2.3.0"
+            },
+            "time": "2020-12-21T19:10:40+00:00"
+        },
+        {
+            "name": "webklex/php-imap",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Webklex/php-imap.git",
+                "reference": "d74fbddfafb8e2d8d296a1b0c7352c7d2b88367a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Webklex/php-imap/zipball/d74fbddfafb8e2d8d296a1b0c7352c7d2b88367a",
+                "reference": "d74fbddfafb8e2d8d296a1b0c7352c7d2b88367a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "illuminate/pagination": ">=5.0.0",
+                "nesbot/carbon": ">=1.0",
+                "php": ">=5.5.9",
+                "symfony/http-foundation": ">=2.8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webklex\\PHPIMAP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Malte Goldenbaum",
+                    "email": "github@webklex.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP IMAP client",
+            "homepage": "https://github.com/webklex/php-imap",
+            "keywords": [
+                "imap",
+                "mail",
+                "php-imap",
+                "pop3",
+                "webklex"
+            ],
+            "support": {
+                "issues": "https://github.com/Webklex/php-imap/issues",
+                "source": "https://github.com/Webklex/php-imap/tree/2.3.0"
+            },
+            "time": "2020-12-21T19:00:37+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.9.1",
             "source": {
@@ -7388,6 +7576,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "cyrex/sso": 20,
         "lrvl/mail-app": 20
     },
     "prefer-stable": true,
