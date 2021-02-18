@@ -16,3 +16,7 @@ Route::redirect('/', '/home');
 Route::get('/home', function () {
     return view('pages.dashboard');
 })->name('pages.home');
+
+Route::get('/settings', function () {
+    return view('pages.settings');
+})->name('pages.settings');

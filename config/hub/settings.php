@@ -2,8 +2,9 @@
 return [
     "public_apps" => [
         "dashboard",
-        "projects",
-        "mail",
+        "files",
+        // "projects",
+        // "mail",
     ],
     "private_apps" => [
 

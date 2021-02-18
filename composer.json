@@ -16,6 +16,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "lrvl/dashboard-app": "9999999-dev",
+        "lrvl/files-app": "9999999-dev",
         "lrvl/mail-app": "9999999-dev",
         "lrvl/projects-app": "9999999-dev",
         "webklex/laravel-imap": "^2.3"
